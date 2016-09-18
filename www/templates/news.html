@@ -1,0 +1,8 @@
+<div ng-controller="NewsContentController as vm">
+  <ion-view view-title="{{vm.newsContent.title}}">
+    <ion-content>
+      <h1>{{vm.newsContent.title}}</h1>
+      <div ng-bind-html="vm.newsContent.body"></div>
+    </ion-content>
+  </ion-view>
+</div>
