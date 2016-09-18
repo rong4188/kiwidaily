@@ -44,7 +44,7 @@
     })
 
     .controller('NewsListController', function ($scope, $api) {
-      let vm = this;
+      var vm = this;
       $api.newsList.get().$promise.then(function(result) {
         vm.newsList = result.stories;
         console.log(vm.newsList);
@@ -52,7 +52,7 @@
     })
 
     .controller('NewsContentController', function ($scope, $api, $stateParams) {
-      let vm = this;
+      var vm = this;
       $api.newsContent.get($stateParams.newsId).$promise.then(function(result) {
         vm.newsContent = result;
         console.log(result);

@@ -21,7 +21,9 @@ angular.module('kdMain', ['ionic', 'ngResource'])
       }
     });
   })
-
+  .constant('ApiBase', {
+    url: 'http://localhost:8100/api'
+  })
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
